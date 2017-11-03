@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Mesh` struct in crate `assimp`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Mesh">
+
+    <title>assimp::scene::Mesh - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct Mesh</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#deref-methods">Methods from Deref&lt;Target=AiMesh&gt;</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>assimp</a>::<wbr><a href='index.html'>scene</a></p><script>window.sidebarCurrent = {name: 'Mesh', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>assimp</a>::<wbr><a href='index.html'>scene</a>::<wbr><a class="struct" href=''>Mesh</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/assimp/internal_macros.rs.html#87' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Mesh&lt;'a&gt;(_);</pre><div class='docblock'><p>Mesh type (incomplete)</p>
+</div>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl&lt;'a&gt; <a class="struct" href="../../assimp/struct.Mesh.html" title="struct assimp::Mesh">Mesh</a>&lt;'a&gt;</code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#30-145' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.primitive_types' class="method"><span id='primitive_types.v' class='invisible'><code>fn <a href='#method.primitive_types' class='fnname'>primitive_types</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#32-34' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.num_vertices' class="method"><span id='num_vertices.v' class='invisible'><code>fn <a href='#method.num_vertices' class='fnname'>num_vertices</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#36-38' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.vertex_iter' class="method"><span id='vertex_iter.v' class='invisible'><code>fn <a href='#method.vertex_iter' class='fnname'>vertex_iter</a>(&amp;self) -&gt; <a class="struct" href="../../assimp/math/vector3/struct.Vector3DIter.html" title="struct assimp::math::vector3::Vector3DIter">Vector3DIter</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#40-43' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.get_vertex' class="method"><span id='get_vertex.v' class='invisible'><code>fn <a href='#method.get_vertex' class='fnname'>get_vertex</a>(&amp;self, id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../assimp/math/vector3/struct.Vector3D.html" title="struct assimp::math::vector3::Vector3D">Vector3D</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#45-47' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.normal_iter' class="method"><span id='normal_iter.v' class='invisible'><code>fn <a href='#method.normal_iter' class='fnname'>normal_iter</a>(&amp;self) -&gt; <a class="struct" href="../../assimp/math/vector3/struct.Vector3DIter.html" title="struct assimp::math::vector3::Vector3DIter">Vector3DIter</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#49-52' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.get_normal' class="method"><span id='get_normal.v' class='invisible'><code>fn <a href='#method.get_normal' class='fnname'>get_normal</a>(&amp;self, id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../assimp/math/vector3/struct.Vector3D.html" title="struct assimp::math::vector3::Vector3D">Vector3D</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#54-56' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.tangent_iter' class="method"><span id='tangent_iter.v' class='invisible'><code>fn <a href='#method.tangent_iter' class='fnname'>tangent_iter</a>(&amp;self) -&gt; <a class="struct" href="../../assimp/math/vector3/struct.Vector3DIter.html" title="struct assimp::math::vector3::Vector3DIter">Vector3DIter</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#58-61' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.get_tangent' class="method"><span id='get_tangent.v' class='invisible'><code>fn <a href='#method.get_tangent' class='fnname'>get_tangent</a>(&amp;self, id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../assimp/math/vector3/struct.Vector3D.html" title="struct assimp::math::vector3::Vector3D">Vector3D</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#63-65' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.bitangent_iter' class="method"><span id='bitangent_iter.v' class='invisible'><code>fn <a href='#method.bitangent_iter' class='fnname'>bitangent_iter</a>(&amp;self) -&gt; <a class="struct" href="../../assimp/math/vector3/struct.Vector3DIter.html" title="struct assimp::math::vector3::Vector3DIter">Vector3DIter</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#67-70' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.get_bitangent' class="method"><span id='get_bitangent.v' class='invisible'><code>fn <a href='#method.get_bitangent' class='fnname'>get_bitangent</a>(&amp;self, id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../assimp/math/vector3/struct.Vector3D.html" title="struct assimp::math::vector3::Vector3D">Vector3D</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#72-74' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.vertex_color_iter' class="method"><span id='vertex_color_iter.v' class='invisible'><code>fn <a href='#method.vertex_color_iter' class='fnname'>vertex_color_iter</a>(&amp;self, set_id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>) -&gt; <a class="struct" href="../../assimp/math/color4/struct.Color4DIter.html" title="struct assimp::math::color4::Color4DIter">Color4DIter</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#76-79' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.get_vertex_color' class="method"><span id='get_vertex_color.v' class='invisible'><code>fn <a href='#method.get_vertex_color' class='fnname'>get_vertex_color</a>(&amp;self, set_id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>, id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../assimp/math/color4/struct.Color4D.html" title="struct assimp::math::color4::Color4D">Color4D</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#81-83' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.texture_coords_iter' class="method"><span id='texture_coords_iter.v' class='invisible'><code>fn <a href='#method.texture_coords_iter' class='fnname'>texture_coords_iter</a>(&amp;self, channel_id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>) -&gt; <a class="struct" href="../../assimp/math/vector3/struct.Vector3DIter.html" title="struct assimp::math::vector3::Vector3DIter">Vector3DIter</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#85-88' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.get_texture_coord' class="method"><span id='get_texture_coord.v' class='invisible'><code>fn <a href='#method.get_texture_coord' class='fnname'>get_texture_coord</a>(&amp;self, channel_id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>, id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../assimp/math/vector3/struct.Vector3D.html" title="struct assimp::math::vector3::Vector3D">Vector3D</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#90-92' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.num_faces' class="method"><span id='num_faces.v' class='invisible'><code>fn <a href='#method.num_faces' class='fnname'>num_faces</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#94-96' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.face_iter' class="method"><span id='face_iter.v' class='invisible'><code>fn <a href='#method.face_iter' class='fnname'>face_iter</a>(&amp;self) -&gt; <a class="struct" href="../../assimp/scene/struct.FaceIter.html" title="struct assimp::scene::FaceIter">FaceIter</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#98-101' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.get_face' class="method"><span id='get_face.v' class='invisible'><code>fn <a href='#method.get_face' class='fnname'>get_face</a>(&amp;self, id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../assimp/struct.Face.html" title="struct assimp::Face">Face</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#103-109' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.num_bones' class="method"><span id='num_bones.v' class='invisible'><code>fn <a href='#method.num_bones' class='fnname'>num_bones</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#111-113' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.bone_iter' class="method"><span id='bone_iter.v' class='invisible'><code>fn <a href='#method.bone_iter' class='fnname'>bone_iter</a>(&amp;self) -&gt; <a class="struct" href="../../assimp/scene/struct.BoneIter.html" title="struct assimp::scene::BoneIter">BoneIter</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#115-118' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.get_bone' class="method"><span id='get_bone.v' class='invisible'><code>fn <a href='#method.get_bone' class='fnname'>get_bone</a>(&amp;self, id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../assimp/scene/struct.Bone.html" title="struct assimp::scene::Bone">Bone</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/scene/mesh.rs.html#120-126' title='goto source code'>[src]</a></span></h4>
+</div>
+                    <h2 id='deref-methods' class='small-section-header'>
+                      Methods from <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html" title="trait core::ops::deref::Deref">Deref</a>&lt;Target = <a class="struct" href="../../assimp_sys/mesh/struct.AiMesh.html" title="struct assimp_sys::mesh::AiMesh">AiMesh</a>&gt;<a href='#deref-methods' class='anchor'></a>
+                    </h2>
+                <div class='impl-items'><h4 id='method.has_positions' class="method"><span id='has_positions.v' class='invisible'><code>fn <a href='#method.has_positions' class='fnname'>has_positions</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp_sys/mesh.rs.html#104-106' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_faces' class="method"><span id='has_faces.v' class='invisible'><code>fn <a href='#method.has_faces' class='fnname'>has_faces</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp_sys/mesh.rs.html#107-109' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_normals' class="method"><span id='has_normals.v' class='invisible'><code>fn <a href='#method.has_normals' class='fnname'>has_normals</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp_sys/mesh.rs.html#110-112' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_tangents_and_bitangents' class="method"><span id='has_tangents_and_bitangents.v' class='invisible'><code>fn <a href='#method.has_tangents_and_bitangents' class='fnname'>has_tangents_and_bitangents</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp_sys/mesh.rs.html#113-115' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_vertex_colors' class="method"><span id='has_vertex_colors.v' class='invisible'><code>fn <a href='#method.has_vertex_colors' class='fnname'>has_vertex_colors</a>(&amp;self, index: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp_sys/mesh.rs.html#116-119' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_texture_coords' class="method"><span id='has_texture_coords.v' class='invisible'><code>fn <a href='#method.has_texture_coords' class='fnname'>has_texture_coords</a>(&amp;self, index: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp_sys/mesh.rs.html#120-123' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.get_num_uv_channels' class="method"><span id='get_num_uv_channels.v' class='invisible'><code>fn <a href='#method.get_num_uv_channels' class='fnname'>get_num_uv_channels</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp_sys/mesh.rs.html#124-130' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.get_num_color_channels' class="method"><span id='get_num_color_channels.v' class='invisible'><code>fn <a href='#method.get_num_color_channels' class='fnname'>get_num_color_channels</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp_sys/mesh.rs.html#131-137' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_bones' class="method"><span id='has_bones.v' class='invisible'><code>fn <a href='#method.has_bones' class='fnname'>has_bones</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp_sys/mesh.rs.html#138-140' title='goto source code'>[src]</a></span></h4>
+</div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Deref' class='impl'><span class='in-band'><code>impl&lt;'a&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html" title="trait core::ops::deref::Deref">Deref</a> for <a class="struct" href="../../assimp/struct.Mesh.html" title="struct assimp::Mesh">Mesh</a>&lt;'a&gt;</code><a href='#impl-Deref' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/internal_macros.rs.html#99-102' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Target' class="type"><span id='Target.t' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html#associatedtype.Target' class="type">Target</a> = <a class="struct" href="../../assimp_sys/mesh/struct.AiMesh.html" title="struct assimp_sys::mesh::AiMesh">AiMesh</a></code></span></h4>
+<div class='docblock'><p>The resulting type after dereferencing.</p>
+</div><h4 id='method.deref' class="method"><span id='deref.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html#tymethod.deref' class='fnname'>deref</a>&lt;'b&gt;(&amp;'b self) -&gt; &amp;'b <a class="struct" href="../../assimp_sys/mesh/struct.AiMesh.html" title="struct assimp_sys::mesh::AiMesh">AiMesh</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/assimp/internal_macros.rs.html#101' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Dereferences the value.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "assimp";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `AiScene` struct in crate `assimp_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, AiScene">
+
+    <title>assimp_sys::AiScene - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct AiScene</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#methods">Methods</a></li></ul></div><p class='location'><a href='index.html'>assimp_sys</a></p><script>window.sidebarCurrent = {name: 'AiScene', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>assimp_sys</a>::<wbr><a class="struct" href=''>AiScene</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/assimp_sys/scene.rs.html#37-53' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct AiScene {
+    pub flags: <a class="struct" href="../assimp_sys/struct.AiSceneFlags.html" title="struct assimp_sys::AiSceneFlags">AiSceneFlags</a>,
+    pub root_node: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiNode.html" title="struct assimp_sys::AiNode">AiNode</a>,
+    pub num_meshes: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a>,
+    pub meshes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiMesh.html" title="struct assimp_sys::AiMesh">AiMesh</a>,
+    pub num_materials: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a>,
+    pub materials: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiMaterial.html" title="struct assimp_sys::AiMaterial">AiMaterial</a>,
+    pub num_animations: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a>,
+    pub animations: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiAnimation.html" title="struct assimp_sys::AiAnimation">AiAnimation</a>,
+    pub num_textures: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a>,
+    pub textures: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiTexture.html" title="struct assimp_sys::AiTexture">AiTexture</a>,
+    pub num_lights: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a>,
+    pub lights: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiLight.html" title="struct assimp_sys::AiLight">AiLight</a>,
+    pub num_cameras: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a>,
+    pub cameras: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiCamera.html" title="struct assimp_sys::AiCamera">AiCamera</a>,
+    // some fields omitted
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.flags' class="structfield">
+                           <span id='flags.v' class='invisible'>
+                           <code>flags: <a class="struct" href="../assimp_sys/struct.AiSceneFlags.html" title="struct assimp_sys::AiSceneFlags">AiSceneFlags</a></code>
+                           </span></span><span id='structfield.root_node' class="structfield">
+                           <span id='root_node.v' class='invisible'>
+                           <code>root_node: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiNode.html" title="struct assimp_sys::AiNode">AiNode</a></code>
+                           </span></span><span id='structfield.num_meshes' class="structfield">
+                           <span id='num_meshes.v' class='invisible'>
+                           <code>num_meshes: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a></code>
+                           </span></span><span id='structfield.meshes' class="structfield">
+                           <span id='meshes.v' class='invisible'>
+                           <code>meshes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiMesh.html" title="struct assimp_sys::AiMesh">AiMesh</a></code>
+                           </span></span><span id='structfield.num_materials' class="structfield">
+                           <span id='num_materials.v' class='invisible'>
+                           <code>num_materials: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a></code>
+                           </span></span><span id='structfield.materials' class="structfield">
+                           <span id='materials.v' class='invisible'>
+                           <code>materials: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiMaterial.html" title="struct assimp_sys::AiMaterial">AiMaterial</a></code>
+                           </span></span><span id='structfield.num_animations' class="structfield">
+                           <span id='num_animations.v' class='invisible'>
+                           <code>num_animations: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a></code>
+                           </span></span><span id='structfield.animations' class="structfield">
+                           <span id='animations.v' class='invisible'>
+                           <code>animations: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiAnimation.html" title="struct assimp_sys::AiAnimation">AiAnimation</a></code>
+                           </span></span><span id='structfield.num_textures' class="structfield">
+                           <span id='num_textures.v' class='invisible'>
+                           <code>num_textures: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a></code>
+                           </span></span><span id='structfield.textures' class="structfield">
+                           <span id='textures.v' class='invisible'>
+                           <code>textures: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiTexture.html" title="struct assimp_sys::AiTexture">AiTexture</a></code>
+                           </span></span><span id='structfield.num_lights' class="structfield">
+                           <span id='num_lights.v' class='invisible'>
+                           <code>num_lights: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a></code>
+                           </span></span><span id='structfield.lights' class="structfield">
+                           <span id='lights.v' class='invisible'>
+                           <code>lights: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiLight.html" title="struct assimp_sys::AiLight">AiLight</a></code>
+                           </span></span><span id='structfield.num_cameras' class="structfield">
+                           <span id='num_cameras.v' class='invisible'>
+                           <code>num_cameras: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a></code>
+                           </span></span><span id='structfield.cameras' class="structfield">
+                           <span id='cameras.v' class='invisible'>
+                           <code>cameras: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../assimp_sys/struct.AiCamera.html" title="struct assimp_sys::AiCamera">AiCamera</a></code>
+                           </span></span>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../assimp_sys/struct.AiScene.html" title="struct assimp_sys::AiScene">AiScene</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/assimp_sys/scene.rs.html#55-74' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.has_meshes' class="method"><span id='has_meshes.v' class='invisible'><code>fn <a href='#method.has_meshes' class='fnname'>has_meshes</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/assimp_sys/scene.rs.html#56-58' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_materials' class="method"><span id='has_materials.v' class='invisible'><code>fn <a href='#method.has_materials' class='fnname'>has_materials</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/assimp_sys/scene.rs.html#59-61' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_lights' class="method"><span id='has_lights.v' class='invisible'><code>fn <a href='#method.has_lights' class='fnname'>has_lights</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/assimp_sys/scene.rs.html#62-64' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_textures' class="method"><span id='has_textures.v' class='invisible'><code>fn <a href='#method.has_textures' class='fnname'>has_textures</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/assimp_sys/scene.rs.html#65-67' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_cameras' class="method"><span id='has_cameras.v' class='invisible'><code>fn <a href='#method.has_cameras' class='fnname'>has_cameras</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/assimp_sys/scene.rs.html#68-70' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_animations' class="method"><span id='has_animations.v' class='invisible'><code>fn <a href='#method.has_animations' class='fnname'>has_animations</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/assimp_sys/scene.rs.html#71-73' title='goto source code'>[src]</a></span></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "assimp_sys";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

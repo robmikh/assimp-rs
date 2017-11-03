@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `assimp` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, assimp">
+
+    <title>assimp - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Crate assimp</p><div class="block items"><ul><li><a href="#reexports">Reexports</a></li><li><a href="#modules">Modules</a></li><li><a href="#structs">Structs</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'assimp', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>assimp</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/assimp/lib.rs.html#1-21' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'>
+<h1 id='assimp---open-asset-import-library' class='section-header'><a href='#assimp---open-asset-import-library'>assimp - Open Asset Import Library</a></h1>
+<p>Bindings for the <a href="http://assimp.sourceforge.net">Assimp</a> library.</p>
+</div><h2 id='reexports' class='section-header'><a href="#reexports">Reexports</a></h2>
+<table><tr><td><code>pub use import::<a class="struct" href="../assimp/import/struct.Importer.html" title="struct assimp::import::Importer">Importer</a>;</code></td></tr><tr><td><code>pub use log::<a class="struct" href="../assimp/log/struct.LogStream.html" title="struct assimp::log::LogStream">LogStream</a>;</code></td></tr><tr><td><code>pub use math::<a class="struct" href="../assimp/math/color3/struct.Color3D.html" title="struct assimp::math::color3::Color3D">Color3D</a>;</code></td></tr><tr><td><code>pub use math::<a class="struct" href="../assimp/math/color4/struct.Color4D.html" title="struct assimp::math::color4::Color4D">Color4D</a>;</code></td></tr><tr><td><code>pub use math::<a class="struct" href="../assimp/math/matrix3/struct.Matrix3x3.html" title="struct assimp::math::matrix3::Matrix3x3">Matrix3x3</a>;</code></td></tr><tr><td><code>pub use math::<a class="struct" href="../assimp/math/matrix4/struct.Matrix4x4.html" title="struct assimp::math::matrix4::Matrix4x4">Matrix4x4</a>;</code></td></tr><tr><td><code>pub use math::<a class="struct" href="../assimp/math/quaternion/struct.Quaternion.html" title="struct assimp::math::quaternion::Quaternion">Quaternion</a>;</code></td></tr><tr><td><code>pub use math::<a class="struct" href="../assimp/math/vector2/struct.Vector2D.html" title="struct assimp::math::vector2::Vector2D">Vector2D</a>;</code></td></tr><tr><td><code>pub use math::<a class="struct" href="../assimp/math/vector3/struct.Vector3D.html" title="struct assimp::math::vector3::Vector3D">Vector3D</a>;</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="export/index.html"
+                                  title='mod assimp::export'>export</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>export</code> module implements functionality for exporting scenes (not yet implemented).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="import/index.html"
+                                  title='mod assimp::import'>import</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>import</code> module contains functionality for importing scenes.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="log/index.html"
+                                  title='mod assimp::log'>log</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="math/index.html"
+                                  title='mod assimp::math'>math</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>math</code> module contains definitions of primitive math types.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="scene/index.html"
+                                  title='mod assimp::scene'>scene</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>scene</code> module contains definitions of imported scene data.</p>
+                           </td>
+                       </tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Animation.html"
+                                  title='struct assimp::Animation'>Animation</a></td>
+                           <td class='docblock-short'>
+                                <p>Animation type (not yet implemented)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Camera.html"
+                                  title='struct assimp::Camera'>Camera</a></td>
+                           <td class='docblock-short'>
+                                <p>Camera type (not yet implemented)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Face.html"
+                                  title='struct assimp::Face'>Face</a></td>
+                           <td class='docblock-short'>
+                                <p>Face type (not yet implemented)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Light.html"
+                                  title='struct assimp::Light'>Light</a></td>
+                           <td class='docblock-short'>
+                                <p>Light type (not yet implemented)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Material.html"
+                                  title='struct assimp::Material'>Material</a></td>
+                           <td class='docblock-short'>
+                                <p>Material type (not yet implemented)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Mesh.html"
+                                  title='struct assimp::Mesh'>Mesh</a></td>
+                           <td class='docblock-short'>
+                                <p>Mesh type (incomplete)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Node.html"
+                                  title='struct assimp::Node'>Node</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>Node</code> type represents a node in the imported scene hierarchy.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.NodeAnim.html"
+                                  title='struct assimp::NodeAnim'>NodeAnim</a></td>
+                           <td class='docblock-short'>
+                                <p>NodeAnim type (not yet implemented)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.QuatKey.html"
+                                  title='struct assimp::QuatKey'>QuatKey</a></td>
+                           <td class='docblock-short'>
+                                <p>QuatKey type (not yet implemented)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Scene.html"
+                                  title='struct assimp::Scene'>Scene</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>Scene</code> type is the root container for all imported scene data.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Texture.html"
+                                  title='struct assimp::Texture'>Texture</a></td>
+                           <td class='docblock-short'>
+                                <p>Texture type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.VectorKey.html"
+                                  title='struct assimp::VectorKey'>VectorKey</a></td>
+                           <td class='docblock-short'>
+                                <p>VectorKey type (not yet implemented)</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "assimp";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
