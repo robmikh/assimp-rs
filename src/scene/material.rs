@@ -39,7 +39,7 @@ impl<'a> Material<'a> {
             aiGetMaterialColor(
                 self.0, 
                 cstr.as_ptr(), 
-                AiPropertyTypeInfo::Float as c_uint, 
+                0, //AiPropertyTypeInfo::Float as c_uint, 
                 0 as c_uint, 
                 &mut raw_color)
         };
