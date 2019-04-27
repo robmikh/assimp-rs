@@ -1091,7 +1091,7 @@ impl Importer {
         unsafe { aiGetExtensionList(&mut ext_list) };
 
         let extensions = ext_list.as_ref().split(';');
-        extensions.map(|x| x.trim_left_matches("*.").to_owned()).collect()
+        extensions.map(|x| x.trim_start_matches("*.").to_owned()).collect()
     }
 }
 
