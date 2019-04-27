@@ -1,6 +1,6 @@
 use std::ffi::CString;
 use std::os::raw::{c_uint};
-use ffi::{AiMaterial, AiMaterialProperty, AiPropertyTypeInfo, AiColor4D, aiGetMaterialColor, AiReturn};
+use ffi::{AiMaterial, AiMaterialProperty, AiColor4D, aiGetMaterialColor, AiReturn};
 
 use super::material_property::{MaterialProperty, MaterialPropertyIter};
 use math::color3::Color3D;
@@ -31,7 +31,7 @@ impl<'a> Material<'a> {
         }
     }
 
-    pub fn get_color3(&self, key: &str) -> Option<Color3D> {
+    pub fn get_color3(&self, key: &str, property_type: u32, index: u32) -> Option<Color3D> {
         let cstr = CString::new(key).unwrap();
 
         let mut raw_color = AiColor4D { a: 0.0, r: 0.0, g: 0.0, b: 0.0 };
@@ -39,8 +39,8 @@ impl<'a> Material<'a> {
             aiGetMaterialColor(
                 self.0, 
                 cstr.as_ptr(), 
-                0, //AiPropertyTypeInfo::Float as c_uint, 
-                0 as c_uint, 
+                property_type as c_uint,
+                index as c_uint, 
                 &mut raw_color)
         };
 
@@ -48,7 +48,12 @@ impl<'a> Material<'a> {
             AiReturn::Success => {
                 Some(Color3D::new(raw_color.r, raw_color.g, raw_color.b))
             },
-            _ => None,
+            AiReturn::Failure => None,
+            _ => panic!("Unknown error code! {:?}", result),
         }
+    }
+
+    pub fn get_diffuse_color3(&self) -> Option<Color3D> {
+        self.get_color3("$clr.diffuse", 0, 0)
     }
 }
