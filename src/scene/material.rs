@@ -31,7 +31,7 @@ impl<'a> Material<'a> {
         }
     }
 
-    pub fn get_color(&self, key: &str) -> Option<Color3D> {
+    pub fn get_color3(&self, key: &str) -> Option<Color3D> {
         let cstr = CString::new(key).unwrap();
 
         let mut raw_color = AiColor4D { a: 0.0, r: 0.0, g: 0.0, b: 0.0 };
