@@ -78,6 +78,15 @@ impl<'a> Scene<'a> {
                           self.num_materials as usize)
     }
 
+    /// Return an individual animation from the scene.
+    pub fn material(&self, id: usize) -> Option<Material> {
+        if id < self.num_materials as usize {
+            unsafe { Some(Material::from_raw(*(self.materials.offset(id as isize)))) }
+        } else {
+            None
+        }
+    }
+
     /// Returns the number of animations in the scene.
     pub fn num_animations(&self) -> u32 {
         self.num_animations
