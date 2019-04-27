@@ -20,3 +20,26 @@ impl<'a> Index<isize> for Face<'a> {
         }
     }
 }
+
+impl<'a> Face<'a> {
+    pub fn num_indices(&self) -> u32 {
+        self.num_indices
+    }
+
+    pub fn index_iter(&self) -> std::slice::Iter<u32> {
+        let slice = unsafe {
+            std::slice::from_raw_parts(
+                self.indices, 
+                self.num_indices as usize)
+        };
+        slice.iter()
+    }
+
+    pub fn get_index(&self, id: u32) -> Option<u32> {
+        if id < self.num_indices {
+            unsafe { Some(*self.indices.offset(id as isize)) }
+        } else {
+            None
+        }
+    }
+}
