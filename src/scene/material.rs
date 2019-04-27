@@ -27,4 +27,13 @@ impl<'a> Material<'a> {
             None
         }
     }
+
+    pub fn get_property_by_key(&self, key: &str) -> Option<MaterialProperty> {
+        for property in self.property_iter() {
+            if property.key() == key {
+                return Some(property);
+            }
+        }
+        None
+    }
 }
