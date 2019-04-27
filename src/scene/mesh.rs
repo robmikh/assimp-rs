@@ -125,6 +125,10 @@ impl<'a> Mesh<'a> {
         }
     }
 
+    pub fn get_material_index(&self) -> u32 {
+        self.material_index
+    }
+
     #[inline]
     fn vertex_data(&self, array: *mut AiVector3D, id: u32) -> Option<Vector3D> {
         if id < self.num_vertices {
