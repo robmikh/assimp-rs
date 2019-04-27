@@ -10,6 +10,7 @@ pub use self::mesh::*;
 pub use self::node::*;
 pub use self::scene::Scene;
 pub use self::texture::*;
+pub use self::structs::*;
 
 mod animation;
 mod camera;
@@ -21,3 +22,4 @@ mod mesh;
 mod node;
 mod scene;
 mod texture;
+mod structs;
